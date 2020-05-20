@@ -1,1 +1,73 @@
 @import "recet.css";
+
+.usercard {
+    display: inline-block;
+    margin: 5px;
+    position: relative;
+    box-sizing: border-box;
+    min-width: 300px;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 3px;
+        }
+
+.CardA {
+    background: linear-gradient(90deg, #ffbf99, #ff7ea1);
+}
+.CardB {
+    background: linear-gradient(90deg, #86c7f7, #158fe0);
+}
+
+.CardC {
+    background: linear-gradient(90deg, #7bd8d1, #26d6bd);
+}
+
+.headingA, .headingB, .headingC {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white;
+   }
+.headingA {
+    padding: 40px 100px 20px 40px;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+}
+.headingB {
+    padding: 010px 100px 40px 40px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 40px;
+
+}
+
+.headingC {
+    padding: 30px 100px 40px 40px;
+    font-family: 'Signika', sans-serif;
+    font-size: 25px;
+}
+
+.usercard::before, .usercard::after {
+    content: "";
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    opacity: 0.3;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.usercard::before {
+    right: -110px;
+    top: -40px;
+}
+
+.usercard::after {
+    right: -30px;
+    bottom: -120px;
+}
+.svg {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
